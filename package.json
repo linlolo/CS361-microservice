@@ -1,0 +1,17 @@
+{
+  "name": "cs361-microservice",
+  "version": "1.0.0",
+  "description": "Spell check microservice for CS361",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Louis Lin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "spell-checker-js": "^1.2.6"
+  }
+}
