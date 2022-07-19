@@ -9,7 +9,8 @@ POST request to this URL with the text included in the body of the request
 
 ### Example Request:
 
-Requests will be in the "text" key of the body.
+Requests will be in the "text" key of the body. The body must include the "text" property, and the
+value must be a non-empty string type.
 
 POST https://linlo-cs361-microservice.uw.r.appspot.com/
 
@@ -22,7 +23,13 @@ Data will be in the body of the response that was requested.
 
 ### Example Response:
 
+Valid Requests will return a 200 status.
+
 Response Body: { "invalidWords: [ "thi" ] }
+
+Invalid Requests will return a 404 error.
+
+Error Body: { "Error": "Invalid Body" }
 
 ## UML Diagram
 

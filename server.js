@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+  if (!req.body.text || typeof req.body.text !== 'string') {
+    return res.status(404).json({ Error: 'Invalid Body' });
+  }
+
   const check = spell.check(req.body.text);
   const checkRemoveNum = check.filter((word) => isNaN(parseFloat(word)));
   res.status(200).json({ invalidWords: checkRemoveNum });
