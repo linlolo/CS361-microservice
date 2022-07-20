@@ -33,4 +33,5 @@ Error Body: { "Error": "Invalid Body" }
 
 ## UML Diagram
 
-(To be completed)
+![UML Sequence Diagram](https://user-images.githubusercontent.com/91217075/180047815-1c6d8687-8d9a-4491-a22d-2575621969db.jpg)
+
